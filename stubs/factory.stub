@@ -22,7 +22,7 @@ class {{ factory }}Factory extends Factory
     public function definition()
     {
         return [
-            //
+            'tenant_id' => Tenant::factory(App\Tenant::class),
         ];
     }
 }
