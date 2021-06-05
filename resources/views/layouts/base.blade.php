@@ -17,6 +17,12 @@
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
         <!-- Styles -->
+        <style>
+            [x-cloak] {
+                display: none !important;
+            }
+        </style>
+
         <link rel="stylesheet" href="{{ url(mix('css/app.css')) }}">
         @livewireStyles
 
