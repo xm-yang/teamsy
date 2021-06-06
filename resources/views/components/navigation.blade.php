@@ -29,7 +29,11 @@
 
           <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Company</a>
 
-          <a href="login" class="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
+            @guest
+            <a href="login" class="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
+            @else
+            <a href="logout" class="font-medium text-indigo-600 hover:text-indigo-500">Log out</a>
+            @endguest
         </div>
       </nav>
     </div>
